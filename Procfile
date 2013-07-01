@@ -1,1 +1,1 @@
-web: lein ring server $PORT
+web: lein trampoline ring server $PORT
