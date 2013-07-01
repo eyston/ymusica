@@ -26,7 +26,7 @@
                          "created_at timestamp default current_timestamp"
                          ");")))
 
-(defn -main [args]
+(defn -main [& args]
   (do
     (create-album-search-cache)
     (create-artist-search-cache)))
