@@ -1,9 +1,10 @@
 (ns ymusica.lastfm.api
-  (:require [clj-http.client :as client]
+  (:require [ymusica.settings :as settings]
+            [clj-http.client :as client]
             [clojure.set])
   (:refer-clojure :exclude [get]))
 
-(def api-key "62923bca4b8ba64e1f39663d02a62e41")
+(def api-key settings/lastfm-api-key)
 (def base-api-url "http://ws.audioscrobbler.com/2.0/")
 
 (defn api-url [args]

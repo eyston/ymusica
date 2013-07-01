@@ -10,3 +10,4 @@ pom.xml
 .lein-plugins
 
 /node_modules
+.env
